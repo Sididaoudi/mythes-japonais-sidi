@@ -72,7 +72,5 @@ $(document).ready(function(){
     });
 });
 </script>
-<?php include("footer.inc.php"); ?>
 </body>
-
 </html>
