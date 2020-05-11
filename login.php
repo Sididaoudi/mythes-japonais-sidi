@@ -3,16 +3,11 @@
   $pdo = new PDO('mysql:host=localhost;dbname=mythesjaponais;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 
   // Si le formulaire est envoyé
-
   $error = "";
 
-
   if ($_POST) {
-
     if (!empty($_POST['email'])) {
-
     $ErrorConnection = true;
-
     $result = $pdo->prepare('SELECT * FROM utilisateurs WHERE email = :email');
     $result->execute(array(
         'email' => $_POST['email']
@@ -32,7 +27,7 @@
             $error = "Le mot de passe ou l'email est faux";
         }
     }
-}
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -67,9 +62,7 @@
     <div>
          <input type="submit" name="connecter" value="Se connecter" class="btn"><br>
     </div>
-
       <a href="register.php">Pas encore inscrit ?</a>
-    
       <a href="index.php">Retour à l'accueil</a>
     </article>
       <div class="text-center"><?php echo $error;  ?></div>
