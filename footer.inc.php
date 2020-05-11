@@ -4,10 +4,7 @@
   	
 #footer
 {
-	position: absolute;
-    left: 0; 
-    right: 0;
-    margin-bottom: : 50%;
+	position: relative;
     display: flex;
     font-size: 30px;
     justify-content: center;
