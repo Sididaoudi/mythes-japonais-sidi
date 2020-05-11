@@ -622,16 +622,15 @@ margin-left: 4px;
 
 /* ajouter un article */
 
+
+#add{
+  margin-right: 20px;
+  height: 111150px;
+  height: 50px;
+}
 h1
 {
   text-align: center;
-}
-.ajouter
-{
-  margin-right: 50px;
-  margin-left: 50px;
-  height: 100px;
-  height: 100px;
 }
 
 button

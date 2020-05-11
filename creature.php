@@ -7,7 +7,6 @@
           'id' => $_GET['id']
            ));
   $creature = $result->fetch(PDO::FETCH_ASSOC);
-
 ?>
 <!DOCTYPE html>
 <html>

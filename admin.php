@@ -43,16 +43,15 @@ $erreurEmail = "";
 <head>
   <title>Admin Dashboard</title>
   <meta charset="utf-8">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/logo.png">
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body id="page-top">
 
   <div id="wrapper">
-
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -71,7 +70,7 @@ $erreurEmail = "";
       </li>
 
       <!-- Divider -->
-      <hr class="sidebar-divider">
+  
 
       <!-- Edit article -->
       <li class="nav-item">
@@ -101,11 +100,12 @@ $erreurEmail = "";
       </li>
 
       <!-- Nav Deconnexion -->
-      
+      <li class="nav-item">
       <form method="POST" action="">
           <input class="deco" type="submit" name="Deconnexion" value="Deconnexion">
       </form>
       </ul>
+
 
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline">
@@ -115,34 +115,6 @@ $erreurEmail = "";
     </ul>
     <!-- End of Sidebar -->
 
-    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-
-      <!-- Main Content -->
-      <div id="content">
-
-        <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-          <!-- Recherche -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Chercher..." aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
-            </div>
-          </form>
-
-          <!-- Topbar Navbar -->
-    
-
-
-          </ul>
-
-        </nav>
         <!-- End of Topbar -->
 
         <!-- Contenu de la page -->
@@ -168,23 +140,7 @@ $erreurEmail = "";
                   </div>
                 </div>
               </div>
-            </div>
-
-            <!-- Nombre de page vues -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Nombre de page vues</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-       
+            </div>       
 
   <!-- Script -->
 
@@ -204,7 +160,5 @@ $erreurEmail = "";
   <!-- Page level custom scripts -->
   <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
-
 </body>
-
 </html>

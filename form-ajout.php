@@ -21,17 +21,15 @@
     <title>Ajouter un article</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo.png">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 <body>
 
     <?php include("nav-admin.php"); ?>
 
-
-     <h1>Ajouter un nouvel article</h1>
+    <h1>Ajouter un nouvel article</h1>
     <!-- Formulaire pour ajouter un article en base de données -->
-    <div class="ajouter">
+    <div class="add">
     <form method="POST" action="">
       <label for="title">Titre</label>
       <input type="text" id="title" name="titre">

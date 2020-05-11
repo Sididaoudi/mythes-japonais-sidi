@@ -8,6 +8,7 @@
         'id' => $_GET['id']
     ));
     $creature = $result2->fetch(PDO::FETCH_ASSOC);
+  }
 
   if(isset($_GET["delete"])) {
   // Requêtes SQL qui supprime une ligne en base en lui passant l'id de l'article
@@ -17,7 +18,7 @@
       'id' => $_GET["delete"]
   ));
   }
-}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -46,12 +47,11 @@
       <label for="contenu">Contenu</label>
       <textarea id="contenu" name="contenu"><?php if(!empty($_GET['id'])) {echo $creature['contenu'];} ?></textarea>
       <br>
-      <span class="icon icon--time"><a href="?delete=<?php echo $listecreature["id"]; ?>." title="Supprimer"><i class="fas fa-trash-alt" style="color:#ff0000;"></i></span>Supprimer</a>
+      <span class="icon icon--time"><a href="?delete=<?php echo $creature["id"]; ?>." title="Supprimer"><i class="fas fa-trash-alt" style="color:#ff0000;"></i></span>Supprimer</a>
       <br>
-      <span class="icon icon--time"><a href="?delete=<?php echo $listeArticle["id"]; ?>." title="Supprimer"><i class="fas fa-trash-alt" style="color:#ff0000;"></i></a></span>Supprimer
+      <span class="icon icon--time"><a href="?delete=<?php echo $listecreature["id"]; ?>." title="Supprimer"><i class="fas fa-trash-alt" style="color:#ff0000;"></i></a></span>Supprimer
       <a href="admin.php">Retour sur le dashboard</a>
     </form>
 </body>
 </html>
-
 

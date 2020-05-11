@@ -63,16 +63,6 @@ $retour_messages=$pdo->query('SELECT * FROM mythes ORDER BY id DESC LIMIT '.$pre
         </div> 
       </div>
     </header>
-    <!-- Recherche -->
-    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-          <input type="text" class="form-control bg-light border-0 small" placeholder="" aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
-    </form>
-
 
   <div class="centered">
   <section class="cards">
@@ -108,5 +98,6 @@ $retour_messages=$pdo->query('SELECT * FROM mythes ORDER BY id DESC LIMIT '.$pre
       <a href="#top"><img src="img/to_top.png"/></a>
     </div>
 </main>
+<?php include("footer.inc.php"); ?>
 </body>
 </html>

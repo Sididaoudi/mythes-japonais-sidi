@@ -36,7 +36,7 @@
 <head>
 	<title>Editer</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/logo.png">
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +47,7 @@
 
     <h1>Editer</h1>
     <!-- Formulaire pour editer -->
-    <div class="ajouter">
+    <div class="editer">
     <form method="POST" action="">
       <label for="title">Titre</label>
       <input type="text" id="title" name="titre" value="<?php if(!empty($_GET['id'])) {echo $creature['titre'];} ?>">
