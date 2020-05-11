@@ -21,8 +21,6 @@
 	 <br>
 	 Téléphone : 06-01-32-47-24
 	</div>
-
-</body>
-<?php include("footer.inc.php"); ?>		 
+</body> 
 </body>
 </html>

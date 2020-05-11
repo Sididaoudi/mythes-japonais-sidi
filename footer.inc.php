@@ -4,7 +4,9 @@
   	
 #footer
 {
-	position: relative;
+	position: absolute;
+	left: 0; 
+	right: 0;
     display: flex;
     font-size: 30px;
     justify-content: center;
